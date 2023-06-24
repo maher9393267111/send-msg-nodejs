@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var path = require('path');
 var TeleSignSDK = require('telesignsdk');
-var request = require("request")
+//var request = require("request")
 
 
 
@@ -55,7 +55,7 @@ app.post('/ip', function (req, res) {
     const message = 'hello maherrrrr';
     const messageType = "ARN";
 
-    
+
     console.log("## MessagingClient.message ##");
 
     function messageCallback(error, responseBody) {
